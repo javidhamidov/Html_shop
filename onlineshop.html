@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/addItem">
+        <label for="item_name">Item name : </label>
+        <input type="text" id="item_name" name="item_name" maxlength="60" required><br>
+        <label for="price">Price : </label>
+        <input type="number" id="price" name="price" min="0" max="10000" required><br>
+        <label for="discription">Discription (optional) : </label>
+        <input type="text" id="discription" name="discription" size="100"><br>
+        <label for="images">Select an image of the item : </label>
+        <input type="file" id="images" name="images" accept="image/*"><br>
+        <label for="availableStock">Available stock number : </label>
+        <input type="number" id="availableStock" name="availableStock" min="1" max="100000" required><br>
+        <label for="publishOn">Publish on : </label>
+        <input type="date" id="publishOn" name="publishOn"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
